@@ -1,22 +1,26 @@
 /* HEADER */
 
 #header {
-    margin: 36px 0 24px 0;
-    height: 400px;
-    padding: 12px 0 8px 0;
+    margin-bottom: 24px;
+    height: 680px;
+    padding: 48px 0 8px 0;
     font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
     position: relative;
 }
 #header::after {
-    background: url('../images/background.png') no-repeat center;
-    background-size: contain;
+    background: url('../images/background.jpg') no-repeat;
+    background-size: cover;
     position: absolute;
-    top: 36;
+    top: 0;
     left: 0;
-    height: 400px;
+    height: 680px;
     width: 100%;
     z-index: -1;
-    opacity: 0.6;
+    opacity: 0.5;
+    filter: grayscale(80%);
+        -webkit-filter: grayscale(80%);
 }
 
 #header h1 {
@@ -24,7 +28,10 @@
 }
 
 #header a  {
-    color: #000000;
+    color: #333333;
+}
+#header a:hover {
+    color: #2F4F4F;
 }
 
 /* NAVIGATION */
@@ -44,11 +51,7 @@
     display: block;
     padding: 0 8px 0 8px;
     text-decoration: none;
-    color: #000000;
 }
-.navigation li a:first-child {
+.navigation li:first-child a {
     padding-left: 0;
-}
-.navigation li a:hover {
-    color: #666666;
 }

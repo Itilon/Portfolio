@@ -12,11 +12,18 @@ class Data {
     }
 
     create(model) {
+        if (!this._isModelValid(model)) {
+            return Promise.reject('Model is Invalid!');
+        }
         return this.collection.insert(model);
     }
 
     _getCollectionName() {
         return `${this.ModelClass.name.toLowerCase()}s`;
+    }
+
+    _isModelValid(model) {
+        return true;
     }
 }
 
