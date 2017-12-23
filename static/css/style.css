@@ -12,6 +12,7 @@
 #header::after {
     background: url('../images/background.jpg') no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     position: absolute;
     top: 0;
     left: 0;
@@ -23,15 +24,19 @@
         -webkit-filter: grayscale(80%);
 }
 
+.fixed-field {
+    position: fixed;
+}
+
 #header h1 {
     margin-left: 64px;
 }
 
 #header a  {
-    color: #333333;
+    color: #4b4e53;
 }
 #header a:hover {
-    color: #2F4F4F;
+    color: #111111;
 }
 
 /* NAVIGATION */
@@ -42,7 +47,7 @@
 }
 .navigation li {
     display: inline-block;
-    margin: 0 24px 0 24px;
+    margin: 0 32px 0 32px;
 }
 .navigation li:first-child {
     margin-left: 0;
