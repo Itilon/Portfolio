@@ -18,9 +18,8 @@ const init = (data) => {
         path.join(__dirname, '../node_modules'))
     );
 
-    app.get('/', (req, res) => {
-        return res.render('home');
-    });
+    const controllers = require('../controllers')(data);
+    require('./routers').attachTo(app, controllers);
 
     return Promise.resolve(app);
 };
