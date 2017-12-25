@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "test"
+    "start": "gulp server"
   },
   "author": "",
   "license": "ISC",
@@ -18,9 +18,10 @@
     "pug": "^2.0.0-rc.4"
   },
   "devDependencies": {
-    "eslint": "^4.13.1",
     "babel-eslint": "^8.0.3",
+    "eslint": "^4.13.1",
     "eslint-config-google": "^0.9.1",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1"
   }
 }

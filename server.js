@@ -4,7 +4,7 @@ const async = () => {
     return Promise.resolve();
 };
 
-const { port, connectionString } = require('./config');
+const { port, connectionString } = require('./app/config/port.config');
 
 async()
     .then(() => require('./db').init(connectionString))

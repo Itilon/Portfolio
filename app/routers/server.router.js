@@ -6,21 +6,13 @@ const attachTo = (app, controllers) => {
     const userController = controllers.userController;
 
     router
-        .get('/', (req, res) => {
-            return res.render('home');
-        })
+        .get('/', postController.getHome)
 
-        .get('/portfolio', (req, res) => {
-            return res.render('portfolio');
-        })
+        .get('/portfolio', postController.getPortfolio)
 
-        .get('/about', (req, res) => {
-            return res.render('about');
-        })
+        .get('/about', postController.getAbout)
 
-        .get('/contact', (req, res) => {
-            return res.render('contact');
-        });
+        .get('/contact', postController.getContact);
 
     app.use('/', router);
 };
