@@ -12,8 +12,7 @@
 #header::after {
     background: url('../images/background.jpg') no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 680px;
@@ -23,15 +22,12 @@
     filter: grayscale(80%);
         -webkit-filter: grayscale(80%);
 }
-
 .fixed-field {
     position: fixed;
 }
-
 #header h1 {
     margin-left: 64px;
 }
-
 #header a  {
     color: #4b4e53;
 }
@@ -66,11 +62,9 @@
 
 /* SEARCH */
 
-
 #search-icon:hover {
     cursor: pointer;
 }
-
 .searchbox-container-hd {
     position: absolute;
     top: -4px;
@@ -78,21 +72,18 @@
     width: 0;
     transition: 1.2s ease-in-out;
 }
-
 .searchbox-container {
     position: absolute;
-    width: 32%;
     top: -4px;
     right: 24px;
+    width: 32%;
     transition: 1.2s ease-in-out;
 }
-
 .searchbox-hd, .searchbox-input-hd {
     width: 100%;
     opacity: 0;
     transition: 1.6s ease-in-out;
 }
-
 .searchbox, .searchbox-input {
     width: 100%;
     opacity: 1;
@@ -105,25 +96,42 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
 }
-
 main {
     background: url('../images/content-background.png');
 }
-
 .head-section {
     background: url('../images/content-shadow-background.png') repeat-x top left;
-    padding: 36px 0;
+    padding: 48px 0 64px 0;
+}
+.img-container {
+    width: 20%;
+    float: left;
+}
+.content-container {
+    width: 80%;
+    float: left;
+}
+.fa-show {
+    padding-left: 32px;
+    color: #0c470c;
+    transform: rotateX(0);
+    transition: 1.2s ease-in-out;
 }
 
-.head-section h2 {
-    text-align: center;
-    font-size: 1.4rem;
-    letter-spacing: 1.2px;
+.fa-hd {
+    padding-left: 12px;
+    color: #336be3;
+    transform: rotateX(90deg);
+    transition: 1.2s ease-in-out;
+}
+.content-container h2 {
+    font-size: 1.6rem;
     text-shadow: -1px -1px;
 }
-
-.head-section p {
-    padding: 4px 32px;
+.content-container p {
     font-size: 1.2rem;
+}
+.content-container h2, .content-container p {
+    padding: 4px 16px;
     letter-spacing: 1.2px;
 }

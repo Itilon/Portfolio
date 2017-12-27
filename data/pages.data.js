@@ -1,10 +1,10 @@
 const Data = require('./base/base.data');
-const Item = require('../models/item.model');
+const Item = require('../models/page.model');
 
-class ItemsData extends Data {
+class PagesData extends Data {
     constructor(db) {
         super(db, Item, Item);
     }
 }
 
-module.exports = ItemsData;
+module.exports = PagesData;

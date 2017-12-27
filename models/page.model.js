@@ -1,7 +1,7 @@
-class Item {
+class Page {
     static isValid(model) {
         return true;
     }
 }
 
-module.exports = Item;
+module.exports = Page;

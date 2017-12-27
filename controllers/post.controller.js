@@ -1,6 +1,11 @@
 module.exports = (data) => {
     const getHome = (req, res) => {
-        res.render('home');
+        data.pages.getAll()
+            .then((pages) => {
+                res.render('home', {
+                    model: pages,
+                });
+            });
     };
 
     const getPortfolio = (req, res) => {
