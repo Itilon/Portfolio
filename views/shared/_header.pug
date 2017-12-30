@@ -1,28 +1,30 @@
 mixin header
     header(id="header" class="container-fluid")
-        div(class="row")
-            div(class="logo col-sm-4")
-                div(class="fixed-field")
-                    h1
+        div(class="logo")
+            h1
+                a(href="/")
+                    | PORTOFOLIO DEMO VERSION 1.0.0
+        nav(class="navigation fixed-field")
+            div(class="row")
+                div(class="col-sm-2")
+                    div(class="nav-controller")
                         a(href="/")
-                            | PORTFOLIO VERSION 1.0.0
-            nav(class="navigation col-sm-8")
-                div(class="fixed-field")
-                    ul
-                        li
-                            a(href="/")
-                                | HOME
-                        li
-                            a(href="/portfolio")
-                                | PORTFOLIO
-                        li
-                            a(href="about")
-                                | ABOUT US
-                        li
-                            a(href="contact")
-                                | CONTACT US
-                        li
-                            i(id="search-icon" class="fa fa-search fa-lg" aria-hidden="true")
-                            div(id="searchbox-container" class="searchbox-container-hd")
-                                form(class="searchbox-hd")
-                                    input(class="searchbox-input-hd")
+                            | HOME
+                div(class="col-sm-2")
+                    div(class="nav-controller")
+                        a(href="/portfolio")
+                            | PORTFOLIO
+                div(class="col-sm-2")
+                    div(class="nav-controller")
+                        a(href="about")
+                            | ABOUT US
+                div(class="col-sm-2")
+                    div(class="nav-controller")
+                        a(href="contact")
+                            | CONTACT US
+                div(class="col-sm-4")
+                    div(class="nav-controller")
+                        i(id="search-icon" class="fa fa-search fa-lg" aria-hidden="true")
+                        div(id="searchbox-container" class="searchbox-container-hd")
+                            form(class="searchbox-hd")
+                                input(class="searchbox-input-hd" placeholder="Search" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search'")
