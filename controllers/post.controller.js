@@ -2,9 +2,13 @@ module.exports = (data) => {
     const getHome = (req, res) => {
         data.pages.getAll()
             .then((pages) => {
-                res.render('home', {
-                    model: pages,
-                });
+                data.projects.getAll()
+                    .then((projects) => {
+                        res.render('home', {
+                            pages: pages,
+                            projects: projects,
+                        });
+                    });
             });
     };
 

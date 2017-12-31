@@ -1,9 +1,9 @@
 const Data = require('./base/base.data');
-const Item = require('../models/page.model');
+const Page = require('../models/page.model');
 
 class PagesData extends Data {
     constructor(db) {
-        super(db, Item, Item);
+        super(db, Page, Page);
     }
 }
 

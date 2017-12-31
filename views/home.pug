@@ -3,7 +3,7 @@ extends shared/_master
 block body
     main
         section(class="head-section row")
-            each page in model
+            each page in pages
                 div(class="col-sm-4")
                     div(class="img-container")
                         i(class="fa fa-comment-o fa-4x fa-hd" aria-hidden="true")
@@ -12,4 +12,13 @@ block body
                             =page.title
                         p
                             =page.content[0]
+        section(class="portfolio-section")
+            h2
+                | Portfolio
+            each project in projects
+                div(class="col-sm-4")
+                    h3
+                    =project.title
+                    img(class="img img-responsive" src=project.url)
+
     footer
