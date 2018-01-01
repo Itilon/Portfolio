@@ -1,3 +1,4 @@
 1. Parallax scrolling effect works slightly incorrectly in Microsoft Edge.
 2. Parallax scrolling effect lags in Firefox - FIXED.
 3. Filter: grayscale() option does not seem to work in Microsoft Edge.
+4. Parallax scrolling effects do not work natively in Firefox and Microsoft Edge, when modules are introduced.

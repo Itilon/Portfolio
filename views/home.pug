@@ -12,13 +12,15 @@ block body
                             =page.title
                         p
                             =page.content[0]
+        section(class="mid-section")
+            div(class="mid-section-image")
         section(class="portfolio-section")
             h2
-                | Portfolio
+                | Our Projects
             each project in projects
                 div(class="col-sm-4 project-container")
                     h3(class="project-title")
                         =project.title
-                    img(class="img img-responsive project-image" src=project.url)
+                    img(class="img img-responsive project-image-hd" src=project.url)
 
     footer
