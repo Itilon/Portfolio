@@ -16,9 +16,9 @@ block body
             h2
                 | Portfolio
             each project in projects
-                div(class="col-sm-4")
-                    h3
-                    =project.title
-                    img(class="img img-responsive" src=project.url)
+                div(class="col-sm-4 project-container")
+                    h3(class="project-title")
+                        =project.title
+                    img(class="img img-responsive project-image" src=project.url)
 
     footer
