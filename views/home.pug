@@ -1,6 +1,8 @@
 extends shared/_master
+include shared/_main-header
 
 block body
+    +header
     main
         section(class="head-section row")
             each page in pages
@@ -22,5 +24,3 @@ block body
                     h3(class="project-title")
                         =project.title
                     img(class="img img-responsive project-image-hd" src=project.url)
-
-    footer

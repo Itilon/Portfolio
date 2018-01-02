@@ -4,6 +4,6 @@ $(document).ready(() => {
     const $downArrow = $('.down-angle');
 
     $downArrow.click(() => {
-        $('html, body').animate({ scrollTop: 660 }, 2000);
+        $('html, body').animate({ scrollTop: 660 }, 1600);
     });
 });

@@ -1,0 +1,11 @@
+include _navigation
+
+mixin header
+    header(id="header" class="container-fluid")
+        div(class="logo")
+            h1
+                a(href="/")
+                    | PORTOFOLIO DEMO VERSION 1.0.0
+        div(class="down-angle")
+            <i class="fa fa-angle-down fa-3x bounce" aria-hidden="true"></i>
+        +navigation
